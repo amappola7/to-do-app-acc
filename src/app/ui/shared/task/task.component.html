@@ -1,1 +1,9 @@
-<p>task works!</p>
+<div class="task">
+  <input type="checkbox" value="true">
+  <p>{{task.title}}</p>
+  <span>
+    <!-- TO DO: Usar NgClass para cambiar el color de la bolita según la prioridad -->
+    <div [ngClass]="task.priority"></div>
+    <p>{{task.priority}}</p>
+  </span>
+</div>

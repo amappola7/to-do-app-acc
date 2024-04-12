@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+  titleButton: string = "Ul"
 
+  onClick() {
+    alert('Presionaste el botón');
+  }
 }

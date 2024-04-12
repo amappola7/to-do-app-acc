@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Task } from 'src/app/models/task';
+import { dummyTasks } from 'dummyData';
 
 @Component({
   selector: 'app-to-do-list',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./to-do-list.component.scss']
 })
 export class ToDoListComponent {
+  tasksList: Task[] = dummyTasks;
 
 }

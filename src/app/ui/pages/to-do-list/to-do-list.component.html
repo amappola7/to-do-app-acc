@@ -1,1 +1,13 @@
-<p>to-do-list works!</p>
+<section>
+  <app-header></app-header>
+  <div class="toDo-list-page__container">
+    <div class="toDo-list__container">
+      <div class="section-title__container">
+        <app-section-title [sectionTitle]="'To - Do List'"></app-section-title>
+      </div>
+      <div class="tasks__container" *ngFor="let task of tasksList">
+        <app-task [task]="task"></app-task>
+      </div>
+    </div>
+  </div>
+</section>

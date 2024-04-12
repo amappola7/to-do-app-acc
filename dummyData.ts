@@ -1,4 +1,6 @@
-export const dummyTasks = [
+import { Task } from "src/app/models/task";
+
+export const dummyTasks: Task[] = [
   {
     "id": 1,
     "title": "Do homework",
